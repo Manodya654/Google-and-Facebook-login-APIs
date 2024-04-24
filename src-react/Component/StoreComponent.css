@@ -1,0 +1,84 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #2a2122;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #13371fb4;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.post{
+    padding-top: 5%;
+    padding-left: 40%;
+    padding-right: 30%;
+}
+.col-md-6{
+    text-align: left;
+    margin-left: 10%;
+}
+.col-md-7{
+    text-align: right;
+    margin-left: 35%;
+    margin-top: -2%;
+}
+.login{
+    margin-left: 55%;
+  }
+  .img{
+    width: 2%;
+    height: 5%;
+  }
+  .collapse{
+    text-align: right;
+  }
+  .form{
+    height: 50%;
+    width: 70%;
+    padding-left: 25%;
+    padding-top: 5%;
+    text-align: left;
+  }
+  .reg{
+    text-align: center;
+  }
+  .register{
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+  }
+  
+  .par{
+    text-align: center;
+    padding: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .stores{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+  }

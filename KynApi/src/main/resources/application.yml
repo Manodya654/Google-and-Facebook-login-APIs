@@ -1,0 +1,39 @@
+app:
+  auth:
+    tokenSecret: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9/eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Im1hbm9keWEiLCJpYXQiOjE1MTYyMzkwMjJ9/HM1lDOJVPZRiXYB-SD-XGh03rdQdASMYP7KONy9Ha9g
+    tokenExpirationMsec: 1186400000
+  oauth2:
+    # After successfully authenticating with the OAuth2 Provider,
+    # we'll be generating an auth token for the user and sending the token to the
+    # redirectUri mentioned by the client in the /oauth2/authorize request.
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+
+
+spring:
+  security:
+      oauth2:
+        client:
+          registration:
+            google:
+              clientId: 800767046263-f4qr94mndtb1khr1v9n1rm0sogo7nt8n.apps.googleusercontent.com
+              clientSecret: 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
+              redirectUri: http://localhost:8080/oauth2/callback/google
+              scope:
+                - email
+                - profile
+            facebook:
+              clientId: 3170032573214991              
+              clientSecret: db42cb97559c0851f91f8290996f6915
+              redirectUri: http://localhost:8080/oauth2/callback/facebook          
+              scope:
+                - email
+                - public_profile  
+          provider:
+            facebook:
+              authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
+              tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
+              userInfoUri: https://graph.facebook.com/v3.0/me?fields=name,email,picture.width(250).height(250)
+              
+              
+               
